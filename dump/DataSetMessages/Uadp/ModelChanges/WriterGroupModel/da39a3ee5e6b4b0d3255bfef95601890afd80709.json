@@ -1,0 +1,112 @@
+{
+  "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "messageType": "Uadp",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "0e64c64989d5382f5f2d235b3f246c5c59974b5d",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "SignAndEncrypt"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedEvents": {
+            "publishedData": [
+              {
+                "id": "b6024244d925873ee16a75c1d28d35a5ae424552",
+                "eventNotifier": null,
+                "selectedFields": [
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "EventId",
+                    "dataSetClassFieldId": "49c7eef5-e885-4b71-aa23-b9966f10fd2c",
+                    "metaData": {
+                      "builtInType": 15,
+                      "dataType": "i=15",
+                      "valueRank": -1
+                    }
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "EventType",
+                    "dataSetClassFieldId": "a1e8bef1-827f-458c-890a-bb0fa214c134",
+                    "metaData": {
+                      "builtInType": 18,
+                      "dataType": "i=18",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 1
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "SourceNode",
+                    "dataSetClassFieldId": "e00bcebe-9f03-49ae-83e0-b8e08213dc45",
+                    "metaData": {
+                      "builtInType": 17,
+                      "dataType": "i=17",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 2
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "Time",
+                    "dataSetClassFieldId": "9bdd0355-2407-4593-9090-a1ea3bcaa8e2",
+                    "metaData": {
+                      "builtInType": 13,
+                      "dataType": "i=13",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 3
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "Change",
+                    "dataSetClassFieldId": "55aa2576-89f0-4457-b9ae-5f0561490158",
+                    "metaData": {
+                      "builtInType": 22,
+                      "dataType": "i=22",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 4
+                  }
+                ],
+                "filter": {
+                  "elements": []
+                },
+                "conditionHandling": null,
+                "typeDefinitionId": null,
+                "modelChangeHandling": {}
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "ModelChanges/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "ModelChanges/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "DataSetMessageHeader",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  }
+}

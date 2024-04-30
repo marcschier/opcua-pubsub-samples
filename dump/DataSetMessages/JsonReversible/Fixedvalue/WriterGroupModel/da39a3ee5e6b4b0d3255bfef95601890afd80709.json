@@ -1,0 +1,124 @@
+{
+  "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "messageType": "JsonReversible",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "cb0a88f5c176801edf4154608ec5abd8b6bab607",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "i=2271",
+                "dataSetFieldName": "i=2271",
+                "id": "e3b422cde102d66579992fef079a3100536e458d",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 12,
+                  "dataType": "i=295",
+                  "valueRank": 1,
+                  "arrayDimensions": [
+                    0
+                  ],
+                  "StructureDataTypes": [],
+                  "enumDataTypes": [],
+                  "simpleDataTypes": [
+                    {
+                      "dataTypeId": "i=295",
+                      "name": "LocaleId",
+                      "baseDataType": "i=12",
+                      "builtInType": 12
+                    }
+                  ]
+                }
+              },
+              {
+                "fieldIndex": 1,
+                "publishedVariableNodeId": "i=2254",
+                "dataSetFieldName": "i=2254",
+                "id": "8f86ff9b0fd1ac2f7751c485d7509c79d0c2df04",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 12,
+                  "dataType": "i=12",
+                  "valueRank": 1,
+                  "arrayDimensions": [
+                    0
+                  ]
+                }
+              },
+              {
+                "fieldIndex": 2,
+                "publishedVariableNodeId": "i=2255",
+                "dataSetFieldName": "i=2255",
+                "id": "b81bbf4eefd6f384be53dbbef6c491b9d0a909ca",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 12,
+                  "dataType": "i=12",
+                  "valueRank": 1,
+                  "arrayDimensions": [
+                    0
+                  ]
+                }
+              },
+              {
+                "fieldIndex": 3,
+                "publishedVariableNodeId": "i=11702",
+                "dataSetFieldName": "i=11702",
+                "id": "84e6bea91db14c540ddaf6c979b45934d01c23b3",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 4,
+                "publishedVariableNodeId": "i=11703",
+                "dataSetFieldName": "i=11703",
+                "id": "7457b99ce8f333e218afc9ab8b73e8a6c870ca8d",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName, ReversibleFieldEncoding"
+      },
+      "metaData": {
+        "queueName": "Fixedvalue/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "Fixedvalue/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "DataSetMessageHeader",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  }
+}

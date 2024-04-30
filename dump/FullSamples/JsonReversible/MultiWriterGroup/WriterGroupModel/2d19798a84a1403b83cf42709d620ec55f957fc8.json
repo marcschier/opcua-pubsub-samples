@@ -1,0 +1,162 @@
+{
+  "id": "2d19798a84a1403b83cf42709d620ec55f957fc8",
+  "messageType": "JsonReversible",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "cb0a88f5c176801edf4154608ec5abd8b6bab607",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            },
+            "group": "Assembly"
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=NegativeTrendData",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=NegativeTrendData",
+                "id": "93eddfb0e61d307341f8c2fbe4f9e6e97028b9f2",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with a slow negative trend",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 1,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=PositiveTrendData",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=PositiveTrendData",
+                "id": "ce5571b25c44dacdde159ec04ec793f5a71fc287",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with a slow positive trend",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName, ReversibleFieldEncoding"
+      },
+      "metaData": {
+        "queueName": "MultiWriterGroup/Assembly"
+      },
+      "publishing": {
+        "queueName": "MultiWriterGroup/Assembly"
+      }
+    },
+    {
+      "dataSetWriterId": 1,
+      "id": "17937046c6c2b4d2b417f7678c6d73a3f75541b8",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            },
+            "group": "Assembly"
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:10"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar1",
+                "id": "094473fd49f7a14812a5ec6cd13036e149ff872f",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 1,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar2",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar2",
+                "id": "5b7f6fc99e0c098beae36ae50e9a2deb3d9110ed",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 2,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar3",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar3",
+                "id": "1690b6f2350e27547ec320be3b73a8a8aa246a1b",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 3,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=BadSlowUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=BadSlowUIntScalar1",
+                "id": "0c76dac8c123736e1866829ddcd733a9542a0534",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName, ReversibleFieldEncoding"
+      },
+      "metaData": {
+        "queueName": "MultiWriterGroup/Assembly"
+      },
+      "publishing": {
+        "queueName": "MultiWriterGroup/Assembly"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "DataSetMessageHeader, MonitoredItemMessage",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  },
+  "name": "Assembly"
+}

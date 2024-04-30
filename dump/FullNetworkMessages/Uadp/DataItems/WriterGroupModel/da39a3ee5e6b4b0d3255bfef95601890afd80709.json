@@ -1,0 +1,61 @@
+{
+  "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "messageType": "Uadp",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "fe1c1a46fb13133c53a054ca152749be2165c4d3",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Sign"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:02"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "ns=23;i=1259",
+                "dataSetFieldName": "Output",
+                "samplingIntervalHint": "00:00:02",
+                "skipFirst": true,
+                "id": "70bf6f877dd76815f94e536a3563e00af33dfd82",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 26,
+                  "dataType": "i=26",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataItems/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DataItems/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "PublisherId, WriterGroupId, NetworkMessageNumber, SequenceNumber, PayloadHeader, Timestamp, DataSetClassId, NetworkMessageHeader, DataSetMessageHeader",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  }
+}

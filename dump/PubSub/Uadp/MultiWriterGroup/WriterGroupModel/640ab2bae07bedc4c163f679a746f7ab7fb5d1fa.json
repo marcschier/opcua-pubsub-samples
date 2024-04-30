@@ -1,0 +1,112 @@
+{
+  "id": "640ab2bae07bedc4c163f679a746f7ab7fb5d1fa",
+  "messageType": "Uadp",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "cb0a88f5c176801edf4154608ec5abd8b6bab607",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            },
+            "group": "Test"
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar2",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar2",
+                "id": "427ee651091e6ff2433d59b0352d028ced6a83ec",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 1,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar3",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar3",
+                "id": "a3e81f527ad863da707676dc60a1106137cc69f4",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 2,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar1",
+                "id": "d93ce15b733b6c6f44a231b6e376698886593137",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 3,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar2",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar2",
+                "id": "02a1f0e5fafa27f9cbedac7e4b5a5eb45a9116d7",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 4,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar3",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar3",
+                "id": "6082bb8f73acc772ef8f20b2d454bf382d85d8e9",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, NodeId, DisplayName, EndpointUrl",
+      "messageSettings": {
+        "dataSetMessageContentMask": "MetaDataVersion, MajorVersion, MinorVersion, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "MultiWriterGroup/Test"
+      },
+      "publishing": {
+        "queueName": "MultiWriterGroup/Test"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "PublisherId, WriterGroupId, NetworkMessageNumber, SequenceNumber, PayloadHeader, Timestamp, DataSetClassId, NetworkMessageHeader, DataSetMessageHeader",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  },
+  "name": "Test"
+}

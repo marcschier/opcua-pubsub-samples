@@ -1,0 +1,1106 @@
+{
+  "id": "d04b1d3dd88259d44d85f6d61be7073154088e1a",
+  "messageType": "Uadp",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "b4c468c1e4508cf471e38e156b74849bb2024f2b",
+      "dataSetWriterName": "MES",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc;s=Plc",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc;s=Plc",
+                "id": "f581a96c63008154d3c1575a8c959f1631097744",
+                "state": {
+                  "statusCode": 2150891520,
+                  "symbolicId": "BadNodeIdUnknown"
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/MES/Status"
+      }
+    },
+    {
+      "dataSetWriterId": 1,
+      "id": "2ac17527dbe85354816c87ec8da1779b1bb43c3a",
+      "dataSetWriterName": "MES",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=StepUp",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=StepUp",
+                "id": "41bc12a922e1e3c751c3e6a919a1e45ba0b95aa1",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/MES/Items/Produced"
+      }
+    },
+    {
+      "dataSetWriterId": 2,
+      "id": "6f8905f0c50e9e7216bd1adc1d9527a4d21e976f",
+      "dataSetWriterName": "MES",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=AlternatingBoolean",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=AlternatingBoolean",
+                "id": "f3ae1d297530f3d5b91f7efd79e4e4f11e414648",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Alternating boolean value",
+                  "builtInType": 1,
+                  "dataType": "i=1",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/MES/Items/Routing"
+      }
+    },
+    {
+      "dataSetWriterId": 3,
+      "id": "368f44fe3bc32435d798eee87bfd24cd359db725",
+      "dataSetWriterName": "MES",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=RandomSignedInt32",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=RandomSignedInt32",
+                "id": "372c10143ae5314cc21dc6942b3844c33977265d",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Random signed 32 bit integer value",
+                  "builtInType": 6,
+                  "dataType": "i=6",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/MES/Random/SignedInt32"
+      }
+    },
+    {
+      "dataSetWriterId": 4,
+      "id": "9b02dcfd50364191dc80b2df01a7e93db0b36528",
+      "dataSetWriterName": "MES",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=RandomUnsignedInt32",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=RandomUnsignedInt32",
+                "id": "23451f66c65ff636ddc22856507c17818a9a610e",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Random unsigned 32 bit integer value",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/MES/Random/UnsignedInt32"
+      }
+    },
+    {
+      "dataSetWriterId": 5,
+      "id": "e24cbc1c969ad16128e7481b8c92761bee79bf03",
+      "dataSetWriterName": "MES",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=DipData",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=DipData",
+                "id": "08b351a978ba53dcf938e159c07403c86c4fa211",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with random dips",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/MES/Health"
+      }
+    },
+    {
+      "dataSetWriterId": 6,
+      "id": "3cf314fc22abad53ff026eca014cca72f0fce79d",
+      "dataSetWriterName": "Test",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar1",
+                "id": "05cbeec295ba957e5d012a0e5355737c426afb6b",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Test/Fast/UInt/Scalar1"
+      }
+    },
+    {
+      "dataSetWriterId": 7,
+      "id": "7898bd2a9843236b535ad5ccdd2846ee3e89e478",
+      "dataSetWriterName": "Test",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar2",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar2",
+                "id": "68b33d8d253492d3ceb004525c678e776c53913c",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Test/Fast/UInt/Scalar2"
+      }
+    },
+    {
+      "dataSetWriterId": 8,
+      "id": "3127373892f8f81b545bb836e3248e3634bf733e",
+      "dataSetWriterName": "Test",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar3",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar3",
+                "id": "64f4e255b5a3eb3f034cc6e25c782ae78ceb3d3b",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Test/Fast/UInt/Scalar3"
+      }
+    },
+    {
+      "dataSetWriterId": 9,
+      "id": "b4bfe64852042b25dc5d7a2cf473e0e0d87f090d",
+      "dataSetWriterName": "Test",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar1",
+                "id": "99914d46dd98c23cd856626f97ff07d02c4105ba",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Test/Fast/Random/UInt/Scalar1"
+      }
+    },
+    {
+      "dataSetWriterId": 10,
+      "id": "05f6e11e620e69ff0c037f54eaa877c0b92d4368",
+      "dataSetWriterName": "Test",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar2",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar2",
+                "id": "f2fc6cdb1f3ab6aeb4e0844244e9846b8a6a2752",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Test/Fast/Random/UInt/Scalar2"
+      }
+    },
+    {
+      "dataSetWriterId": 11,
+      "id": "bac0200909e25a34f8c330984de634149121b72d",
+      "dataSetWriterName": "Test",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar3",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar3",
+                "id": "a4102f78c4b2977f42c8521866920c4f3a236f4e",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Test/Fast/Random/UInt/Scalar3"
+      }
+    },
+    {
+      "dataSetWriterId": 12,
+      "id": "10ae8936ac2d97f866815c88fb5583455d346462",
+      "dataSetWriterName": "Test",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=NegativeTrendData",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=NegativeTrendData",
+                "id": "432635ff9c3b20bb528495a14e0baca5efbcb468",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with a slow negative trend",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Test/Trend"
+      }
+    },
+    {
+      "dataSetWriterId": 13,
+      "id": "e476a041c23d761806b8d77b8611b1aa8ac67d94",
+      "dataSetWriterName": "Assembly",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=PositiveTrendData",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=PositiveTrendData",
+                "id": "46e32b109e6993de14031f41fe2eec75c927370a",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with a slow positive trend",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Assembly/Trend"
+      }
+    },
+    {
+      "dataSetWriterId": 14,
+      "id": "cf2964ba9662cf83238abae6542e13d8caa8b08f",
+      "dataSetWriterName": "Assembly",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:10"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar1",
+                "id": "5f56d22aee6cab70db67b6fb2c36174398d45cb9",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Assembly/Slow/UInt/Scalar1"
+      }
+    },
+    {
+      "dataSetWriterId": 15,
+      "id": "3017e98add0ea93d5380cd04b9257d8d11807d76",
+      "dataSetWriterName": "Assembly",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:10"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar2",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar2",
+                "id": "9b73e9e2d564de8a65f6e408c6fcb82e55d32024",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Assembly/Slow/UInt/Scalar2"
+      }
+    },
+    {
+      "dataSetWriterId": 16,
+      "id": "505b3167f52a0aa1fc716447182ee396283c08ec",
+      "dataSetWriterName": "Assembly",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:10"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar3",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar3",
+                "id": "9538261cbc7d71385164346a2e82316e9848f31a",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Assembly/Slow/UInt/Scalar3"
+      }
+    },
+    {
+      "dataSetWriterId": 17,
+      "id": "77e20e037dae2f703a74a4faa4db60d2480936a8",
+      "dataSetWriterName": "Assembly",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:10"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=BadSlowUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=BadSlowUIntScalar1",
+                "id": "c75858975ec05a89ce6aa2a745e14a416881e1b1",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Assembly/Slow/UInt/Scalar1/Bad"
+      }
+    },
+    {
+      "dataSetWriterId": 18,
+      "id": "4bf0cd323a1bdcc4889eeff7d043be654c20f4b2",
+      "dataSetWriterName": "Packaging",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:10"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar1",
+                "id": "06921f20a6ae0a9f2e1f974aaa55f1bf9a4a10d6",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Packaging/Slow/UInt/Scalar1/Random"
+      }
+    },
+    {
+      "dataSetWriterId": 19,
+      "id": "37834939d4ac94d5107d7fa6dfa323f396188a2b",
+      "dataSetWriterName": "Packaging",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:10"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar2",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar2",
+                "id": "f2b3fca61f9611803b0a282f48b3685ec81893c8",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Packaging/Slow/UInt/Scalar2/Random"
+      }
+    },
+    {
+      "dataSetWriterId": 20,
+      "id": "8f016caafd6798d113a2d469db1ac0cda151de94",
+      "dataSetWriterName": "Packaging",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:10"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar3",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar3",
+                "id": "d3ec4e474bd9198a8fd0083d45d532c681bb7f42",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Packaging/Slow/UInt/Scalar3/Random"
+      }
+    },
+    {
+      "dataSetWriterId": 21,
+      "id": "d36fc89b9110662e2dbf460bfd1e83580a142665",
+      "dataSetWriterName": "Packaging",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:10"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=BadSlowRandomUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=BadSlowRandomUIntScalar1",
+                "id": "293ce021e5bb46fe8417b1353aef341edf0c96bb",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Packaging/Slow/UInt/Scalar1/Random/Bad"
+      }
+    },
+    {
+      "dataSetWriterId": 22,
+      "id": "31dfd63c7dcd3afd123d3d14a1544740e41159db",
+      "dataSetWriterName": "Packaging",
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SpikeData",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SpikeData",
+                "id": "7035f613f48c8e06f991d52eb99660eab1da83f2",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with random spikes",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "DataSetTopics/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "DESKTOP-BGFJS91/Packaging/Health"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "PublisherId, WriterGroupId, NetworkMessageNumber, SequenceNumber, PayloadHeader, Timestamp, DataSetClassId, NetworkMessageHeader, DataSetMessageHeader",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  },
+  "headerLayoutUri": "FullNetworkMessages"
+}

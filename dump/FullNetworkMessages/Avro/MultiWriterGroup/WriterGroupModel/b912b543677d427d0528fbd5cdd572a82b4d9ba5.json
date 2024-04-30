@@ -1,0 +1,135 @@
+{
+  "id": "b912b543677d427d0528fbd5cdd572a82b4d9ba5",
+  "messageType": "Avro",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "cb0a88f5c176801edf4154608ec5abd8b6bab607",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            },
+            "group": "MES"
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc;s=Plc",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc;s=Plc",
+                "id": "c5e86a96f2478434d86230632569735d9aff3fab",
+                "state": {
+                  "statusCode": 2150891520,
+                  "symbolicId": "BadNodeIdUnknown"
+                }
+              },
+              {
+                "fieldIndex": 1,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=StepUp",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=StepUp",
+                "id": "b3cc928da7b2331c86f10f8bbe6bfdba8a6c15d4",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 2,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=AlternatingBoolean",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=AlternatingBoolean",
+                "id": "60b6a3355ea9ebfcc12bc3dda32caf1103e17713",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Alternating boolean value",
+                  "builtInType": 1,
+                  "dataType": "i=1",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 3,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=RandomSignedInt32",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=RandomSignedInt32",
+                "id": "d6785a2c26f1df646a85a5772e42f6face5c6ff5",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Random signed 32 bit integer value",
+                  "builtInType": 6,
+                  "dataType": "i=6",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 4,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=RandomUnsignedInt32",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=RandomUnsignedInt32",
+                "id": "2891c61fba73fa1a64e24fb17cccb2e7003b26b8",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Random unsigned 32 bit integer value",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 5,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=DipData",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=DipData",
+                "id": "11239b17a167041cfa6760e97ff9ecfb0dacef4f",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with random dips",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 6,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar1",
+                "id": "22dc701246b8c2adecb34c728ef358345a8de9e5",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "MultiWriterGroup/MES"
+      },
+      "publishing": {
+        "queueName": "MultiWriterGroup/MES"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "PublisherId, WriterGroupId, NetworkMessageNumber, SequenceNumber, PayloadHeader, Timestamp, DataSetClassId, NetworkMessageHeader, DataSetMessageHeader",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  },
+  "name": "MES"
+}

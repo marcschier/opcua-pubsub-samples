@@ -1,0 +1,329 @@
+{
+  "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "messageType": "Uadp",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "cb0a88f5c176801edf4154608ec5abd8b6bab607",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "name": "PendingAlarms",
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedEvents": {
+            "publishedData": [
+              {
+                "id": "d920882831d06cc8d35e34b3911064367b9b7ced",
+                "eventNotifier": "i=2253",
+                "selectedFields": [
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "ConditionClassId"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "ConditionClassId",
+                    "dataSetClassFieldId": "932a68e3-579e-4bb7-abb3-9b57f5913483",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 17,
+                      "dataType": "i=17",
+                      "valueRank": -1
+                    }
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "ConditionClassName"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "ConditionClassName",
+                    "dataSetClassFieldId": "d6f33736-0c45-4793-ac00-7e92eb5e5e77",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 21,
+                      "dataType": "i=21",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 1
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "ConditionSubClassId"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "ConditionSubClassId",
+                    "dataSetClassFieldId": "348f4e5f-4179-4cba-9ec7-cf82882f0620",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 17,
+                      "dataType": "i=17",
+                      "valueRank": 1,
+                      "arrayDimensions": [
+                        0
+                      ]
+                    },
+                    "fieldIndex": 2
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "ConditionSubClassName"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "ConditionSubClassName",
+                    "dataSetClassFieldId": "4e672ba7-928a-48e2-92ee-2cbe407a9fe5",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 21,
+                      "dataType": "i=21",
+                      "valueRank": 1,
+                      "arrayDimensions": [
+                        0
+                      ]
+                    },
+                    "fieldIndex": 3
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "EventId"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "EventId",
+                    "dataSetClassFieldId": "03413d1c-763d-4e7d-8136-2ee9f0580045",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 15,
+                      "dataType": "i=15",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 4
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "EventType"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "EventType",
+                    "dataSetClassFieldId": "13c2f1c3-7773-407a-bd5e-42ce342f3181",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 17,
+                      "dataType": "i=17",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 5
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "LocalTime"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "LocalTime",
+                    "dataSetClassFieldId": "b7e48042-ad3c-400a-a3ae-a8f1a4426f18",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 22,
+                      "dataType": "i=8912",
+                      "valueRank": -1,
+                      "StructureDataTypes": [
+                        {
+                          "DataTypeId": "i=8912",
+                          "Name": "TimeZoneDataType",
+                          "StructureType": "Structure",
+                          "Fields": [
+                            {
+                              "name": "Offset",
+                              "dataType": "i=4",
+                              "valueRank": -1,
+                              "arrayDimensions": []
+                            },
+                            {
+                              "name": "DaylightSavingInOffset",
+                              "dataType": "i=1",
+                              "valueRank": -1,
+                              "arrayDimensions": []
+                            }
+                          ],
+                          "BaseDataType": "i=22",
+                          "DefaultEncodingId": "i=8917"
+                        }
+                      ],
+                      "enumDataTypes": [],
+                      "simpleDataTypes": []
+                    },
+                    "fieldIndex": 6
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "Message"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "Message",
+                    "dataSetClassFieldId": "b7ca296f-bc1c-40b6-aeed-5f8da9297434",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 21,
+                      "dataType": "i=21",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 7
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "ReceiveTime"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "ReceiveTime",
+                    "dataSetClassFieldId": "f919087f-b3e7-41ef-bd4d-5cceb2dcbc2d",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 13,
+                      "dataType": "i=294",
+                      "valueRank": -1,
+                      "StructureDataTypes": [],
+                      "enumDataTypes": [],
+                      "simpleDataTypes": [
+                        {
+                          "dataTypeId": "i=294",
+                          "name": "UtcTime",
+                          "baseDataType": "i=13",
+                          "builtInType": 13
+                        }
+                      ]
+                    },
+                    "fieldIndex": 8
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "Severity"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "Severity",
+                    "dataSetClassFieldId": "4de5dd35-3a55-4aaf-bb35-3799c63d6c2f",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 5,
+                      "dataType": "i=5",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 9
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "SourceName"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "SourceName",
+                    "dataSetClassFieldId": "c2c94f0f-fe60-4284-a150-95052ee87817",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 12,
+                      "dataType": "i=12",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 10
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "SourceNode"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "SourceNode",
+                    "dataSetClassFieldId": "751a7f2e-5085-4639-8f34-207c002cef0b",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 17,
+                      "dataType": "i=17",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 11
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "Time"
+                    ],
+                    "attributeId": "Value",
+                    "dataSetFieldName": "Time",
+                    "dataSetClassFieldId": "ff0e8e60-2471-4824-af5a-532c83ec6171",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 13,
+                      "dataType": "i=294",
+                      "valueRank": -1,
+                      "StructureDataTypes": [],
+                      "enumDataTypes": [],
+                      "simpleDataTypes": [
+                        {
+                          "dataTypeId": "i=294",
+                          "name": "UtcTime",
+                          "baseDataType": "i=13",
+                          "builtInType": 13
+                        }
+                      ]
+                    },
+                    "fieldIndex": 12
+                  }
+                ],
+                "filter": {
+                  "elements": [
+                    {
+                      "filterOperator": "OfType",
+                      "filterOperands": [
+                        {
+                          "value": "i=2041"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "conditionHandling": {
+                  "updateInterval": 10,
+                  "snapshotInterval": 20
+                },
+                "typeDefinitionId": null,
+                "name": "PendingAlarms"
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "RawData",
+      "messageSettings": {
+        "dataSetMessageContentMask": 0
+      },
+      "metaData": {
+        "queueName": "PendingAlarms/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "PendingAlarms/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "SingleDataSetMessage",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  }
+}

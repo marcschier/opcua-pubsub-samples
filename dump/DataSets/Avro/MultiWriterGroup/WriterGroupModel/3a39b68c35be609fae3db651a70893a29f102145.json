@@ -1,0 +1,149 @@
+{
+  "id": "3a39b68c35be609fae3db651a70893a29f102145",
+  "messageType": "Avro",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "17937046c6c2b4d2b417f7678c6d73a3f75541b8",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            },
+            "group": "Packaging"
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:10"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar1",
+                "id": "06921f20a6ae0a9f2e1f974aaa55f1bf9a4a10d6",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 1,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar2",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar2",
+                "id": "f2b3fca61f9611803b0a282f48b3685ec81893c8",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 2,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar3",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar3",
+                "id": "d3ec4e474bd9198a8fd0083d45d532c681bb7f42",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 3,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=BadSlowRandomUIntScalar1",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=BadSlowRandomUIntScalar1",
+                "id": "293ce021e5bb46fe8417b1353aef341edf0c96bb",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": 0
+      },
+      "metaData": {
+        "queueName": "MultiWriterGroup/Packaging"
+      },
+      "publishing": {
+        "queueName": "MultiWriterGroup/Packaging"
+      }
+    },
+    {
+      "dataSetWriterId": 1,
+      "id": "cb0a88f5c176801edf4154608ec5abd8b6bab607",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            },
+            "group": "Packaging"
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SpikeData",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SpikeData",
+                "id": "7035f613f48c8e06f991d52eb99660eab1da83f2",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with random spikes",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": 0
+      },
+      "metaData": {
+        "queueName": "MultiWriterGroup/Packaging"
+      },
+      "publishing": {
+        "queueName": "MultiWriterGroup/Packaging"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": 0,
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  },
+  "name": "Packaging"
+}

@@ -1,0 +1,90 @@
+{
+  "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "messageType": "Json",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "cb0a88f5c176801edf4154608ec5abd8b6bab607",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "nsu=http://microsoft.com/Opc/OpcPlc/;s=StepUp",
+                "dataSetFieldName": "nsu=http://microsoft.com/Opc/OpcPlc/;s=StepUp",
+                "id": "b62566ac670c2bd5ad8870df0e950c293faa63af",
+                "state": {
+                  "statusCode": 2147483648,
+                  "errorMessage": "Namespace 'http://microsoft.com/Opc/OpcPlc/' was not found in NamespaceTable. (Parameter 'nodeId')",
+                  "symbolicId": "Bad"
+                }
+              },
+              {
+                "fieldIndex": 1,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=AlternatingBoolean",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=AlternatingBoolean",
+                "id": "f3ae1d297530f3d5b91f7efd79e4e4f11e414648",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Alternating boolean value",
+                  "builtInType": 1,
+                  "dataType": "i=1",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 2,
+                "publishedVariableNodeId": "nsu=http://microsoft.com/Opc/OpcPlc/;s=RandomSignedInt32",
+                "dataSetFieldName": "nsu=http://microsoft.com/Opc/OpcPlc/;s=RandomSignedInt32",
+                "id": "2fecf41491e7d3ce44e2f82e5639a5469958a33d",
+                "state": {
+                  "statusCode": 2147483648,
+                  "errorMessage": "Namespace 'http://microsoft.com/Opc/OpcPlc/' was not found in NamespaceTable. (Parameter 'nodeId')",
+                  "symbolicId": "Bad"
+                }
+              },
+              {
+                "fieldIndex": 3,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=DoesNotExist",
+                "dataSetFieldName": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=DoesNotExist",
+                "id": "06bec33d331c63d24aa9462fe46514031f9ca71e",
+                "state": {
+                  "statusCode": 2150891520,
+                  "symbolicId": "BadNodeIdUnknown"
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, NodeId, DisplayName, EndpointUrl",
+      "messageSettings": {
+        "dataSetMessageContentMask": "MetaDataVersion, MajorVersion, MinorVersion, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "SubscribeErrors/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "SubscribeErrors/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "DataSetMessageHeader, MonitoredItemMessage",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  }
+}

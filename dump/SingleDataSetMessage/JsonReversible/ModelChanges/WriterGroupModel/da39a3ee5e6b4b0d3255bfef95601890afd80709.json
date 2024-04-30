@@ -1,0 +1,112 @@
+{
+  "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "messageType": "JsonReversible",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "0e64c64989d5382f5f2d235b3f246c5c59974b5d",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "SignAndEncrypt"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedEvents": {
+            "publishedData": [
+              {
+                "id": "b6024244d925873ee16a75c1d28d35a5ae424552",
+                "eventNotifier": null,
+                "selectedFields": [
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "EventId",
+                    "dataSetClassFieldId": "e02f3892-e2d7-4d6a-8f70-679b8f89f612",
+                    "metaData": {
+                      "builtInType": 15,
+                      "dataType": "i=15",
+                      "valueRank": -1
+                    }
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "EventType",
+                    "dataSetClassFieldId": "b782f7d5-ef92-4b2f-89d5-b67925dfffdc",
+                    "metaData": {
+                      "builtInType": 18,
+                      "dataType": "i=18",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 1
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "SourceNode",
+                    "dataSetClassFieldId": "7f389ae8-c44a-4201-b2c3-23ec29bc69bc",
+                    "metaData": {
+                      "builtInType": 17,
+                      "dataType": "i=17",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 2
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "Time",
+                    "dataSetClassFieldId": "54b96898-8934-4d74-950c-6821a4b658dd",
+                    "metaData": {
+                      "builtInType": 13,
+                      "dataType": "i=13",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 3
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "Change",
+                    "dataSetClassFieldId": "b554e98f-649c-4f79-8301-02d4c233834b",
+                    "metaData": {
+                      "builtInType": 22,
+                      "dataType": "i=22",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 4
+                  }
+                ],
+                "filter": {
+                  "elements": []
+                },
+                "conditionHandling": null,
+                "typeDefinitionId": null,
+                "modelChangeHandling": {}
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName, ReversibleFieldEncoding"
+      },
+      "metaData": {
+        "queueName": "ModelChanges/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "ModelChanges/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "DataSetMessageHeader, SingleDataSetMessage",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  }
+}

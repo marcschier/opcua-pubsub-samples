@@ -1,0 +1,112 @@
+{
+  "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "messageType": "JsonReversible",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "0e64c64989d5382f5f2d235b3f246c5c59974b5d",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "SignAndEncrypt"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedEvents": {
+            "publishedData": [
+              {
+                "id": "b6024244d925873ee16a75c1d28d35a5ae424552",
+                "eventNotifier": null,
+                "selectedFields": [
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "EventId",
+                    "dataSetClassFieldId": "62876e60-cb46-4a28-ae2c-76a6c8a731a3",
+                    "metaData": {
+                      "builtInType": 15,
+                      "dataType": "i=15",
+                      "valueRank": -1
+                    }
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "EventType",
+                    "dataSetClassFieldId": "cac2b22c-4256-4e47-af52-ab8b2bf64117",
+                    "metaData": {
+                      "builtInType": 18,
+                      "dataType": "i=18",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 1
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "SourceNode",
+                    "dataSetClassFieldId": "99cd28f5-7ef7-4899-9e98-5895c69520bc",
+                    "metaData": {
+                      "builtInType": 17,
+                      "dataType": "i=17",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 2
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "Time",
+                    "dataSetClassFieldId": "2f819089-c666-4b2e-a3a3-c614fdf5b2bd",
+                    "metaData": {
+                      "builtInType": 13,
+                      "dataType": "i=13",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 3
+                  },
+                  {
+                    "typeDefinitionId": null,
+                    "dataSetFieldName": "Change",
+                    "dataSetClassFieldId": "da7fe4d5-fdee-4f42-ab9c-d8f46daf2dae",
+                    "metaData": {
+                      "builtInType": 22,
+                      "dataType": "i=22",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 4
+                  }
+                ],
+                "filter": {
+                  "elements": []
+                },
+                "conditionHandling": null,
+                "typeDefinitionId": null,
+                "modelChangeHandling": {}
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName, ReversibleFieldEncoding"
+      },
+      "metaData": {
+        "queueName": "ModelChanges/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "ModelChanges/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "PublisherId, WriterGroupId, NetworkMessageNumber, SequenceNumber, PayloadHeader, Timestamp, DataSetClassId, NetworkMessageHeader, DataSetMessageHeader",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  }
+}

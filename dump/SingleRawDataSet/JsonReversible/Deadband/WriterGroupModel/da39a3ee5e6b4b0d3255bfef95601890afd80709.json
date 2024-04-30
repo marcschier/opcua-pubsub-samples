@@ -1,0 +1,79 @@
+{
+  "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "messageType": "JsonReversible",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "50fc11f0625e2d47665e7b6f8b3334002f6b77a6",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "SignAndEncrypt"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:01"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "http://test.org/UA/Data/#i=11224",
+                "dataSetFieldName": "DoubleValues",
+                "samplingIntervalHint": "00:00:01",
+                "deadbandType": "Absolute",
+                "deadbandValue": 5.0,
+                "serverQueueSize": 10,
+                "id": "91748a34a48fae7b117a0d6cf7b07854ba7a5f18",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 1,
+                "publishedVariableNodeId": "http://test.org/UA/Data/#i=11206",
+                "dataSetFieldName": "Int64Values",
+                "samplingIntervalHint": "00:00:01",
+                "deadbandType": "Percent",
+                "deadbandValue": 5.0,
+                "serverQueueSize": 10,
+                "id": "00c1cdd3b2b8c859001cd06262e4399f90ec9b34",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 8,
+                  "dataType": "i=8",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "RawData",
+      "messageSettings": {
+        "dataSetMessageContentMask": 0
+      },
+      "metaData": {
+        "queueName": "Deadband/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "Deadband/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "SingleDataSetMessage",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  }
+}

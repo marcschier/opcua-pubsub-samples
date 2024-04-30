@@ -1,0 +1,386 @@
+{
+  "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "messageType": "Json",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "f656b5212785c0b40e701928827fe6e335cab2b1",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "None"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:01:00"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "i=2258",
+                "dataSetFieldName": "CurrentTime",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "f3a27194a0b2fc884a5202e7d39712b64da9b248",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 13,
+                  "dataType": "i=294",
+                  "valueRank": -1,
+                  "StructureDataTypes": [],
+                  "enumDataTypes": [],
+                  "simpleDataTypes": [
+                    {
+                      "dataTypeId": "i=294",
+                      "name": "UtcTime",
+                      "baseDataType": "i=13",
+                      "builtInType": 13
+                    }
+                  ]
+                }
+              },
+              {
+                "fieldIndex": 1,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=AlternatingBoolean",
+                "dataSetFieldName": "AlternatingBoolean",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "9690fc52813eb3bc72050faf58e4d979c6cc2a70",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Alternating boolean value",
+                  "builtInType": 1,
+                  "dataType": "i=1",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 2,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=RandomSignedInt32",
+                "dataSetFieldName": "RandomSignedInt32",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "2c09ec6eb97abd2f1d08fad9b8923123ea2e967c",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Random signed 32 bit integer value",
+                  "builtInType": 6,
+                  "dataType": "i=6",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 3,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=RandomUnsignedInt32",
+                "dataSetFieldName": "RandomUnsignedInt32",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "b9eb835443caaec427942cc84a608480d17e8e69",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Random unsigned 32 bit integer value",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 4,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=DipData",
+                "dataSetFieldName": "DipData",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "1cc5cc9165765268b8b54411703115492ee4a921",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with random dips",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 5,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar1",
+                "dataSetFieldName": "FastUIntScalar1",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "7cc0c1fe7d21ee00ab1770a169f6dfa77834a9ea",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 6,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar2",
+                "dataSetFieldName": "FastUIntScalar2",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "f02c2f4925eb83788b885c1a7c990dd2877a8758",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 7,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastUIntScalar3",
+                "dataSetFieldName": "FastUIntScalar3",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "ce55626bc6c3e77761c278e0abff4b33d4e2395a",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 8,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar1",
+                "dataSetFieldName": "FastRandomUIntScalar1",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "91e639699a2a7fe5047d7ddf7f7ad03196e731be",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 9,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar2",
+                "dataSetFieldName": "FastRandomUIntScalar2",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "7469aaf93a1c36423a1c0df225eb39f800447712",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 10,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=FastRandomUIntScalar3",
+                "dataSetFieldName": "FastRandomUIntScalar3",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "88fbca5e56fdfa7e7f791e0d4e6e24426869b8f5",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 11,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=NegativeTrendData",
+                "dataSetFieldName": "NegativeTrendData",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "46f554d5a3c10ad23d697dfa73af1131fdbcb7ad",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with a slow negative trend",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 12,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=PositiveTrendData",
+                "dataSetFieldName": "PositiveTrendData",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "c5c7da174cbe96e5d9019f1f14b5388f77c5e8e3",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with a slow positive trend",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 13,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar1",
+                "dataSetFieldName": "SlowUIntScalar1",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "76f6fcd9091c834bff5045434117a4cf4bbc061d",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 14,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar2",
+                "dataSetFieldName": "SlowUIntScalar2",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "7d33e2915db3c933eca98e3fa138b726cf85be40",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 15,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowUIntScalar3",
+                "dataSetFieldName": "SlowUIntScalar3",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "8d0db5944a7b483e15c4ba3b629349eadbfeb5ba",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 16,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=BadSlowUIntScalar1",
+                "dataSetFieldName": "BadSlowUIntScalar1",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "8fb465908e86a60ac4bc12d5aba9559100ae9de9",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 17,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar1",
+                "dataSetFieldName": "SlowRandomUIntScalar1",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "c6fba7c3b6e1ce30e7178a1d906b742dd3a5dd32",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 18,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar2",
+                "dataSetFieldName": "SlowRandomUIntScalar2",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "77ea968bd066fad6d49dbadfcf31319af3125035",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 19,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SlowRandomUIntScalar3",
+                "dataSetFieldName": "SlowRandomUIntScalar3",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "db90c957042feb0568015070066b7c6e4ec3d4ec",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 20,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=BadSlowRandomUIntScalar1",
+                "dataSetFieldName": "BadSlowRandomUIntScalar1",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "77ac6101b18c653ba0380193ad6e50dfb04b6fe9",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Constantly increasing value(s)",
+                  "builtInType": 7,
+                  "dataType": "i=7",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 21,
+                "publishedVariableNodeId": "nsu=http://opcfoundation.org/UA/Plc/Applications;s=SpikeData",
+                "dataSetFieldName": "SpikeData",
+                "heartbeatInterval": "00:01:00",
+                "readDisplayNameFromNode": true,
+                "id": "37bac3ba246bf0bdbf53f0632205d53453f57e02",
+                "metaData": {
+                  "minorVersion": 1,
+                  "description": "Value with random spikes",
+                  "builtInType": 11,
+                  "dataType": "i=11",
+                  "valueRank": -1
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "Heartbeat2/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "Heartbeat2/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "DataSetMessageHeader, MonitoredItemMessage",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  }
+}

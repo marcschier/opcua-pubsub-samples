@@ -1,0 +1,109 @@
+{
+  "id": "884c0d7a741209a99c247a7a65012df09a320400",
+  "messageType": "JsonReversible",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "d9afc314fa08f9f412b56113ab52b9c438f72335",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "i=2259",
+                "dataSetFieldName": "State",
+                "readDisplayNameFromNode": true,
+                "id": "050bcba1745f035cd8c0b65f575e6098b158746d",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 29,
+                  "dataType": "i=852",
+                  "valueRank": -1,
+                  "StructureDataTypes": [],
+                  "enumDataTypes": [
+                    {
+                      "dataTypeId": "i=852",
+                      "name": "ServerState",
+                      "fields": [
+                        {
+                          "name": "Running",
+                          "value": 0,
+                          "displayName": "Running"
+                        },
+                        {
+                          "name": "Failed",
+                          "value": 1,
+                          "displayName": "Failed"
+                        },
+                        {
+                          "name": "NoConfiguration",
+                          "value": 2,
+                          "displayName": "NoConfiguration"
+                        },
+                        {
+                          "name": "Suspended",
+                          "value": 3,
+                          "displayName": "Suspended"
+                        },
+                        {
+                          "name": "Shutdown",
+                          "value": 4,
+                          "displayName": "Shutdown"
+                        },
+                        {
+                          "name": "Test",
+                          "value": 5,
+                          "displayName": "Test"
+                        },
+                        {
+                          "name": "CommunicationFault",
+                          "value": 6,
+                          "displayName": "CommunicationFault"
+                        },
+                        {
+                          "name": "Unknown",
+                          "value": 7,
+                          "displayName": "Unknown"
+                        }
+                      ]
+                    }
+                  ],
+                  "simpleDataTypes": []
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": true,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": "Timestamp, MetaDataVersion, DataSetWriterId, MajorVersion, MinorVersion, SequenceNumber, MessageType, DataSetWriterName, ReversibleFieldEncoding"
+      },
+      "metaData": {
+        "queueName": "KeepAlive/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "KeepAlive/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "DataSetMessageHeader, SingleDataSetMessage",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  },
+  "headerLayoutUri": "SingleDataSetMessage"
+}

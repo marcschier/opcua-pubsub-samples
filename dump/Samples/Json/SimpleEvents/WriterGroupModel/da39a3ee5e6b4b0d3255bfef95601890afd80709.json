@@ -1,0 +1,153 @@
+{
+  "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "messageType": "Json",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "cb0a88f5c176801edf4154608ec5abd8b6bab607",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "name": "SimpleEvents",
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {},
+          "publishedEvents": {
+            "publishedData": [
+              {
+                "id": "67ec98a6561aff9394b6dc6d46144e277c07e8bb",
+                "eventNotifier": "i=2253",
+                "selectedFields": [
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "EventId"
+                    ],
+                    "dataSetFieldName": "EventId",
+                    "dataSetClassFieldId": "ae73a0aa-95ae-42a6-b343-79d91b788f10",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 15,
+                      "dataType": "i=15",
+                      "valueRank": -1
+                    }
+                  },
+                  {
+                    "typeDefinitionId": "i=2041",
+                    "browsePath": [
+                      "Message"
+                    ],
+                    "dataSetFieldName": "Message",
+                    "dataSetClassFieldId": "748a12c1-b4b6-4f6f-962f-44531a7bb9b4",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 21,
+                      "dataType": "i=21",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 1
+                  },
+                  {
+                    "typeDefinitionId": "ns=16;i=235",
+                    "browsePath": [
+                      "16:CycleId"
+                    ],
+                    "dataSetFieldName": "nsu=http://opcfoundation.org/SimpleEvents;CycleId",
+                    "dataSetClassFieldId": "a94f0b01-68b1-49e5-a78e-c2cf5dd12be6",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 12,
+                      "dataType": "i=12",
+                      "valueRank": -1
+                    },
+                    "fieldIndex": 2
+                  },
+                  {
+                    "typeDefinitionId": "ns=16;i=235",
+                    "browsePath": [
+                      "16:CurrentStep"
+                    ],
+                    "dataSetFieldName": "nsu=http://opcfoundation.org/SimpleEvents;CurrentStep",
+                    "dataSetClassFieldId": "e3944bee-93b8-40fd-9625-312944ce9ac0",
+                    "metaData": {
+                      "minorVersion": 1,
+                      "builtInType": 22,
+                      "dataType": "nsu=http://opcfoundation.org/SimpleEvents;i=183",
+                      "valueRank": -1,
+                      "StructureDataTypes": [
+                        {
+                          "DataTypeId": "nsu=http://opcfoundation.org/SimpleEvents;i=183",
+                          "Name": "nsu=http://opcfoundation.org/SimpleEvents;CycleStepDataType",
+                          "StructureType": "Structure",
+                          "Fields": [
+                            {
+                              "name": "Name",
+                              "dataType": "i=12",
+                              "valueRank": -1,
+                              "arrayDimensions": []
+                            },
+                            {
+                              "name": "Duration",
+                              "dataType": "i=11",
+                              "valueRank": -1,
+                              "arrayDimensions": []
+                            }
+                          ],
+                          "BaseDataType": "i=22",
+                          "DefaultEncodingId": null
+                        }
+                      ],
+                      "enumDataTypes": [],
+                      "simpleDataTypes": []
+                    },
+                    "fieldIndex": 3
+                  }
+                ],
+                "filter": {
+                  "elements": [
+                    {
+                      "filterOperator": "OfType",
+                      "filterOperands": [
+                        {
+                          "value": "ns=16;i=235"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                "queueSize": 10,
+                "conditionHandling": null,
+                "typeDefinitionId": null,
+                "name": "SimpleEvents"
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, NodeId, DisplayName, EndpointUrl",
+      "messageSettings": {
+        "dataSetMessageContentMask": "MetaDataVersion, MajorVersion, MinorVersion, MessageType, DataSetWriterName"
+      },
+      "metaData": {
+        "queueName": "SimpleEvents/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "SimpleEvents/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": "DataSetMessageHeader, MonitoredItemMessage",
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  }
+}

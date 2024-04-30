@@ -1,0 +1,119 @@
+{
+  "id": "c85cb1ebdcfd06254e36963c09023daed3157150",
+  "messageType": "Avro",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "2c6236381fe7f56acf1a06197f6ccb5e469a70dd",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "None"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:00.1000000"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "i=2258",
+                "dataSetFieldName": "CurrentTime",
+                "samplingIntervalHint": "00:00:00.1000000",
+                "readDisplayNameFromNode": true,
+                "id": "f3a27194a0b2fc884a5202e7d39712b64da9b248",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 13,
+                  "dataType": "i=294",
+                  "valueRank": -1,
+                  "StructureDataTypes": [],
+                  "enumDataTypes": [],
+                  "simpleDataTypes": [
+                    {
+                      "dataTypeId": "i=294",
+                      "name": "UtcTime",
+                      "baseDataType": "i=13",
+                      "builtInType": 13
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "extensionFields": [
+          {
+            "fieldIndex": 1,
+            "dataSetFieldName": "EngineeringUnits",
+            "value": "mm/sec",
+            "id": "b1252ee9a34aafc17e03a67bb40dddb065bc0c99",
+            "metaData": {
+              "builtInType": 12,
+              "dataType": "i=12",
+              "valueRank": -1
+            }
+          },
+          {
+            "fieldIndex": 2,
+            "dataSetFieldName": "AssetId",
+            "value": 5,
+            "id": "5a3695dee2900f5606a8876e7c44ad28fbbc6b39",
+            "metaData": {
+              "builtInType": 24,
+              "dataType": "i=24",
+              "valueRank": -1
+            }
+          },
+          {
+            "fieldIndex": 3,
+            "dataSetFieldName": "Important",
+            "value": false,
+            "id": "dd8c57f2cbf0e301e510634461edb2e9e7b92d95",
+            "metaData": {
+              "builtInType": 1,
+              "dataType": "i=1",
+              "valueRank": -1
+            }
+          },
+          {
+            "fieldIndex": 4,
+            "dataSetFieldName": "Variance",
+            "value": 12.3465,
+            "id": "f3a4b7a58d0cea859392b8258e89d88b6d59bfa9",
+            "metaData": {
+              "builtInType": 10,
+              "dataType": "i=10",
+              "valueRank": -1
+            }
+          }
+        ],
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": 0
+      },
+      "keyFrameCount": 10,
+      "metaData": {
+        "queueName": "KeyFrames/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "KeyFrames/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": 0,
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  },
+  "headerLayoutUri": "DataSets"
+}

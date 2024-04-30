@@ -1,0 +1,85 @@
+{
+  "id": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
+  "messageType": "JsonReversible",
+  "dataSetWriters": [
+    {
+      "dataSetWriterId": 0,
+      "id": "fab87fd3b80ab83476e42b054b89892dba788324",
+      "dataSetWriterName": null,
+      "dataSet": {
+        "dataSetSource": {
+          "connection": {
+            "endpoint": {
+              "url": "opc.tcp://localhost:61457/UA/SampleServer",
+              "securityMode": "Best"
+            }
+          },
+          "subscriptionSettings": {
+            "publishingInterval": "00:00:00.0100000"
+          },
+          "publishedVariables": {
+            "publishedData": [
+              {
+                "publishedVariableNodeId": "ns=23;i=1259",
+                "dataSetFieldName": "ns=23;i=1259",
+                "samplingIntervalHint": "00:00:00.0100000",
+                "serverQueueSize": 10,
+                "id": "fc4f9c8359da8fbb0607095d16a6842a0b839101",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 26,
+                  "dataType": "i=26",
+                  "valueRank": -1
+                }
+              },
+              {
+                "fieldIndex": 1,
+                "publishedVariableNodeId": "i=2258",
+                "dataSetFieldName": "i=2258",
+                "samplingIntervalHint": "00:00:00.0100000",
+                "serverQueueSize": 10,
+                "id": "8e1cfc0905b208429606cef3a810882689af3674",
+                "metaData": {
+                  "minorVersion": 1,
+                  "builtInType": 13,
+                  "dataType": "i=294",
+                  "valueRank": -1,
+                  "StructureDataTypes": [],
+                  "enumDataTypes": [],
+                  "simpleDataTypes": [
+                    {
+                      "dataTypeId": "i=294",
+                      "name": "UtcTime",
+                      "baseDataType": "i=13",
+                      "builtInType": 13
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "dataSetMetaData": {
+          "majorVersion": 1
+        },
+        "sendKeepAlive": false,
+        "Routing": "None"
+      },
+      "dataSetFieldContentMask": "StatusCode, SourceTimestamp, ServerTimestamp, NodeId, DisplayName, EndpointUrl, ApplicationUri, ExtensionFields",
+      "messageSettings": {
+        "dataSetMessageContentMask": 0
+      },
+      "metaData": {
+        "queueName": "FastTime/<<UnknownWriterGroup>>"
+      },
+      "publishing": {
+        "queueName": "FastTime/<<UnknownWriterGroup>>"
+      }
+    }
+  ],
+  "messageSettings": {
+    "networkMessageContentMask": 0,
+    "groupVersion": 1,
+    "namespaceFormat": "Expanded"
+  }
+}
